@@ -1,0 +1,143 @@
+#services{
+  padding:2% 2%;
+
+}
+#global_services{
+display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:0% 20% 20% 0%;
+  overflow: hidden;
+
+
+
+}
+h1{
+  margin-left: 5%;
+  font-size: 3rem;
+  padding: 2%;
+}
+
+h2{
+  margin: 0 auto;
+  padding-top: 5%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#title_coding{
+  color: orange;
+}
+
+#title_design{
+  color: red;
+
+}
+
+#title_marketing{
+  color: purple;
+}
+
+.filet {
+  height: 15px;
+  width: 70%;
+  border-bottom: solid 5px black;
+  margin-left: 20%;
+  padding: 5%;
+  overflow: hidden;
+
+
+}
+.scene {
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+  background-color: orange;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+
+
+  h4{
+    margin: auto auto;
+    color:white;
+    display: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+}
+
+.cube__face--front  { transform: rotateY(  0deg); }
+.cube__face--right  { transform: rotateY( 90deg); }
+.cube__face--back   { transform: rotateY(180deg); }
+.cube__face--left   { transform: rotateY(-90deg); }
+.cube__face--top    { transform: rotateX( 90deg); }
+.cube__face--bottom { transform: rotateX(-90deg); }
+
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(100px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+.cube { transform: translateZ(-100px); }
+
+p, li{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+}
+
+.red{
+  background-color: red;
+}
+
+.orange{
+  background-color: orange;
+}
+
+.purple{
+  background-color: purple;
+}
+#marketing{
+
+}
+#description_marketing{
+  display: none;
+  width: 60%;
+#title_marketing{
+  display: block;
+}
+}
+
+#design{
+
+  #description_design{
+    display: none;
+    width: 60%;
+  }
+}
+
+#coding{
+
+  #description_coding{
+    display: none;
+    width: 60%;
+
+  }
+}

@@ -1,0 +1,63 @@
+#logo {
+  width: 180px;
+  height: auto;
+  padding: 1%;
+  margin-left: 5%;
+}
+
+header {
+  padding: 3%;
+}
+header #cosmoHeader {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+header .header {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header .header img {
+  width: 40%;
+}
+header h1 {
+  font-size: 4rem;
+  width: 80%;
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  line-height: 7rem;
+}
+header h2 {
+  z-index: 1;
+  color: black;
+  width: 80%;
+  line-height: 3rem;
+  font-family: "Pangolin", cursive;
+  font-size: 2.6em;
+}
+header .button_about_section {
+  width: 3rem;
+  height: 6rem;
+  border: solid 5px black;
+  border-radius: 180px;
+  margin: 0 auto;
+}
+header .button_about_section:hover {
+  cursor: pointer;
+}
+header .click {
+  width: 30%;
+  height: 30%;
+  background-color: black;
+  border-radius: 180px;
+  margin: 50% auto;
+  animation-duration: 10s;
+  animation-name: slidein;
+}
+
+/*# sourceMappingURL=header.component.css.map */

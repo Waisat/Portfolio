@@ -1,0 +1,69 @@
+#contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+#formulaire{
+  width: 40%;
+}
+
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+
+
+    input, label{
+      width:auto;
+      height: 5%;
+      padding: 2%;
+
+    }
+    input{
+      border-radius: 20px;
+    }
+    label{
+      font-size: 2rem;
+    }
+    #message{
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+
+    #submit_form{
+      width: 10%;
+      height: 8%;
+      background-color: rgba(255,0,50);
+
+    }
+
+    #submit_form:hover{
+      cursor: pointer;
+      margin-left: 50%;
+
+    }
+  }
+
+
+  #me_intro{
+    width: 40%;
+
+    img{
+      border-radius: 90px;
+      margin-left: 38%;
+    }
+
+    h1{
+      text-align: center;
+    }
+
+    h2{
+      text-align: center;
+    }
+  }
+
+}
+

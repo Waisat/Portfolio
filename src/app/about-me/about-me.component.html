@@ -1,0 +1,65 @@
+<div class="filet">
+
+</div>
+<div class="grid">
+
+
+</div>
+
+
+<section id="about_me" >
+  <section id="me_skills">
+
+
+  <article id="text">
+    <h3>A propos</h3>
+
+    <p>
+
+      Développeur Full stack freelance avec spécialités en marketing et référencement. Rigoureux, optimiste et créatif dans les choses que j’entreprends.
+      Je suis prêt à vous accompagner dans votre réalisation, développement ou promotion d’application web.
+      Les différentes solutions que je suis capable de vous apporter:
+      Réalisation de la maquette de votre application web avec prise en compte de l’expérience de navigation des utilisateurs.
+      Réalisation des applications web à travers différents environnements de développement aussi bien pour la partie Frontend que la partie Backend de votre site.
+      Référencement de vos applications web, pour renforcer votre visibilité ou booster vos ventes, analyses de vos flux avec Google Analytics afin d’optimiser vos performances. </p>
+
+  </article>
+
+  <article (mouseover)="onMouseHover()">
+    <h3 >Compêtences</h3>
+
+    <img class="logo" *ngFor="let skill of logoImg" [src]=skill.img [alt]=skill.alt [title]=skill.title >
+
+
+
+  </article>
+
+
+  </section>
+
+  <section id="img_introduce">
+
+    <div id="me" class="rectangle">
+      <img src="assets/ressources/aboutImg/felipe-furtado-2zDXqgTzEFE-unsplash.jpg" alt="unsplash Img illustration" title="unsplash Img illustration" class="resize_img">
+    </div>
+    <div id="illustration" class="rectangle">
+      <img src="assets/ressources/aboutImg/dj-johnson-mTH1CZWaX0Q-unsplash.jpg"  alt="unsplash Img illustration" title="unsplash Img illustration" class="resize_img">
+    </div>
+    <div id="second_illustration" class="rectangle">
+      <img src="assets/ressources/aboutImg/florian-klauer-mk7D-4UCfmg-unsplash.jpg" alt="unsplash Img illustration" title="unsplash Img illustration" class="resize_img">
+    </div>
+
+  </section>
+
+
+</section>
+
+<div class="button_about_section" (click)="scrollDownService()">
+  <div class="click" >
+
+  </div>
+</div>
+
+<app-services></app-services>
+
+

@@ -1,0 +1,115 @@
+
+section{
+margin: 5% auto;
+display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+#group_projets{
+  width: 40%;
+}
+
+  #nav_project{
+   position: absolute;
+  }
+  .groupP{
+
+    position: absolute;
+    margin-right: 30%;
+    margin-top: 2rem;
+
+  }
+
+  #pokemon{
+    display: none;
+  }
+
+  #waisatusMovie{
+    display: none;
+  }
+
+  #todolist_react{
+    display: none;
+  }
+
+  .groupP{
+    width: 40%;
+    position: absolute;
+    margin-right: 30%;
+
+
+  }
+
+  #page_project{
+
+
+    h1{
+      font-size: 2rem;
+    }
+
+  }
+.scene {
+
+  width: 400px;
+  height: 400px;
+  perspective: 1200px;
+
+  background-color: rgba(230,49,31,0.7);
+
+
+}
+
+.logo{
+  width: 80%;
+  margin: 0 auto;
+}
+.img_desc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5%;
+  img{
+  margin: 0 auto;
+
+  }
+
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+
+  background-color: rgba(231,101,11,0.7)
+
+}
+
+.cube__face {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+
+  background-color: rgba(141,60,143,0.9)
+}
+.cube__face--front  { transform: rotateY(  0deg); }
+.cube__face--right  { transform: rotateY( 90deg); }
+.cube__face--back   { transform: rotateY(180deg); }
+.cube__face--left   { transform: rotateY(-90deg); }
+.cube__face--top    { transform: rotateX( 90deg); }
+.cube__face--bottom { transform: rotateX(-90deg); }
+
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(200px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(200px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(200px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(200px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(200px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(200px); }
+
+
+.cube { transform: translateZ(-200px); }
+
+
+
+.cube { transition: transform 1s; }
+}

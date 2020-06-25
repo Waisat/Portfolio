@@ -1,0 +1,113 @@
+.animated {
+  visibility: visible !important;
+}
+
+.hide-on-init {
+  visibility: hidden;
+}
+
+.filet {
+  height: 15px;
+  width: 80%;
+  border-bottom: solid 5px black;
+  margin-left: 20%;
+}
+
+#about_me {
+  z-index: -1;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 5em;
+  /* background: rgb(2,0,36);
+   background: linear-gradient(180deg, rgba(2,0,36,0.2) 0%, rgba(0,0,0,0.2) 7%, rgba(255,255,255,1) 45%, rgba(0,0,0,0.2) 100%); */
+}
+#about_me p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+#about_me article h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+#about_me article img {
+  width: 10%;
+  height: auto;
+  padding: 0 1em;
+}
+#about_me article p {
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: "Roboto Slab", serif;
+}
+#about_me #img_introduce {
+  width: 50%;
+  margin-top: 3%;
+}
+#about_me #img_introduce #me {
+  overflow: hidden;
+  margin-left: 10em;
+  margin-top: 2%;
+  position: absolute;
+  z-index: -1;
+}
+#about_me #img_introduce #illustration {
+  overflow: hidden;
+  margin-right: 15em;
+  margin-top: 20%;
+}
+#about_me #img_introduce #second_illustration {
+  overflow: hidden;
+  margin-left: -10em;
+  margin-top: -5em;
+  position: absolute;
+  z-index: -1;
+}
+#about_me #img_introduce .rectangle {
+  width: 15em;
+  height: 15em;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#about_me .resize_img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+.button_about_section {
+  width: 3rem;
+  height: 6rem;
+  border: solid 5px black;
+  border-radius: 180px;
+  margin: 0 auto;
+}
+
+.button_about_section:hover {
+  cursor: pointer;
+}
+
+.click {
+  width: 30%;
+  height: 30%;
+  background-color: black;
+  border-radius: 180px;
+  margin: 50% auto;
+  animation-duration: 10s;
+  animation-name: slidein;
+}
+
+/*# sourceMappingURL=about-me.component.css.map */
