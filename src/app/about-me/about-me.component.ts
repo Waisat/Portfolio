@@ -26,24 +26,24 @@ scrolldown:boolean= false;
     },
 
     {
-      img:"/assets/ressources/logo/react-seeklogo.com.svg",
+      img:"assets/ressources/logo/react-seeklogo.com.svg",
       alt:"react_logo",
       title:"react_logo"
     },
 
     {
-      img:"/assets/ressources/logo/jquery-seeklogo.com.svg",
+      img:"assets/ressources/logo/jquery-seeklogo.com.svg",
       alt:"jquery_logo",
       title:"jquery"
     },
 
     {
-      img:"/assets/ressources/logo/php_PNG50.png",
+      img:"assets/ressources/logo/php_PNG50.png",
       alt:"php_logo",
       title:"php"
     },
     {
-      img:"/assets/ressources/logo/jamstack-seeklogo.com.svg",
+      img:"assets/ressources/logo/jamstack-seeklogo.com.svg",
       alt:"jamStack_logo",
       title:"jamStack"
     },
