@@ -1,14 +1,19 @@
 <div id="bloc_nav">
   <nav>
     <img id="logo" src="assets/ressources/backgroundheader/logoPhoenix.svg" alt="logo" title="logo">
+
+    <div>
     <ul>
 
-      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/project" routerLinkActive="active">Réalisation</a></li>
-      <li ><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-    </ul>
+      <li class="nav-desktop" (click)="onclickNav(home)"><a routerLink="/home" routerLinkActive="active"  id="home" class="noActive" #home>Home</a></li>
+      <li  class="nav-desktop"  (click)="onclickNav(realisation)"><a routerLink="/project" routerLinkActive="active" id="project" class="noActive" #realisation>Réalisation</a></li>
+      <li  class="nav-desktop"  (click)="onclickNav(contact)" ><a routerLink="/contact" routerLinkActive="active" id="contact" class="noActive" #contact>Contact</a></li>
 
+    </ul>
+    <i class="fas fa-bars"></i>
+    </div>
   </nav>
+
   <div class="filet">
 
   </div>

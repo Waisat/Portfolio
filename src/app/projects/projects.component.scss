@@ -1,115 +1,518 @@
+@media screen and (min-width: 1024px) {
+  section {
+    margin: 5% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
-section{
-margin: 5% auto;
-display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-#group_projets{
-  width: 40%;
-}
-
-  #nav_project{
-   position: absolute;
-  }
-  .groupP{
-
-    position: absolute;
-    margin-right: 30%;
-    margin-top: 2rem;
-
-  }
-
-  #pokemon{
-    display: none;
-  }
-
-  #waisatusMovie{
-    display: none;
-  }
-
-  #todolist_react{
-    display: none;
-  }
-
-  .groupP{
-    width: 40%;
-    position: absolute;
-    margin-right: 30%;
-
-
-  }
-
-  #page_project{
-
-
-    h1{
-      font-size: 2rem;
+    #group_projets {
+      width: 40%;
     }
 
+    #nav_project {
+      position: absolute;
+    }
+
+    .groupP {
+
+      position: absolute;
+      margin-right: 30%;
+      margin-top: 2rem;
+
+    }
+
+    #pokemon {
+
+    }
+
+    #waisatusMovie {
+
+    }
+
+    #todolist_react {
+
+    }
+
+    .groupP {
+      width: 40%;
+      position: absolute;
+      margin-right: 30%;
+
+
+    }
+
+    ul{
+      display: flex;
+      flex-direction: row;
+      margin-left:  80%;
+
+      li{
+        padding: 1rem;
+        list-style: none;
+      }
+
+      li:hover{
+        cursor: pointer;
+      }
+    }
+
+    #page_project {
+
+
+      h1 {
+        font-size: 2rem;
+      }
+
+    }
+
+    .scene {
+
+      width: 400px;
+      height: 400px;
+      perspective: 1200px;
+
+      background-color: rgba(230, 49, 31, 0.7);
+
+
+    }
+
+    .logo {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .img_desc {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 5%;
+
+      img {
+        margin: 0 auto;
+
+      }
+
+    }
+
+    .cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+
+      background-color: rgba(231, 101, 11, 0.7)
+
+    }
+
+    .cube__face {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+
+      background-color: rgba(141, 60, 143, 0.9)
+    }
+
+    .cube__face--front {
+      transform: rotateY(0deg);
+    }
+
+    .cube__face--right {
+      transform: rotateY(90deg);
+    }
+
+    .cube__face--back {
+      transform: rotateY(180deg);
+    }
+
+    .cube__face--left {
+      transform: rotateY(-90deg);
+    }
+
+    .cube__face--top {
+      transform: rotateX(90deg);
+    }
+
+    .cube__face--bottom {
+      transform: rotateX(-90deg);
+    }
+
+
+    .cube__face--front {
+      transform: rotateY(0deg) translateZ(200px);
+    }
+
+    .cube__face--right {
+      transform: rotateY(90deg) translateZ(200px);
+    }
+
+    .cube__face--back {
+      transform: rotateY(180deg) translateZ(200px);
+    }
+
+    .cube__face--left {
+      transform: rotateY(-90deg) translateZ(200px);
+    }
+
+    .cube__face--top {
+      transform: rotateX(90deg) translateZ(200px);
+    }
+
+    .cube__face--bottom {
+      transform: rotateX(-90deg) translateZ(200px);
+    }
+
+
+    .cube {
+      transform: translateZ(-200px);
+    }
+
+
+    .cube {
+      transition: transform 1s;
+    }
   }
-.scene {
-
-  width: 400px;
-  height: 400px;
-  perspective: 1200px;
-
-  background-color: rgba(230,49,31,0.7);
-
 
 }
 
-.logo{
-  width: 80%;
-  margin: 0 auto;
-}
-.img_desc{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 5%;
-  img{
-  margin: 0 auto;
+@media screen and (min-width: 600px) and (max-width: 1024px) {
 
+  section {
+    margin: 5% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    #group_projets {
+      width: 40%;
+    }
+
+    #nav_project {
+      position: absolute;
+    }
+
+    .groupP {
+
+      position: absolute;
+      margin-right: 30%;
+      margin-top: 2rem;
+
+    }
+
+    #pokemon {
+
+    }
+
+    #waisatusMovie {
+
+    }
+
+    #todolist_react {
+
+    }
+
+    .groupP {
+      width: 40%;
+      position: absolute;
+      margin-right: 30%;
+
+
+    }
+
+    #page_project {
+
+
+      h1 {
+        font-size: 2rem;
+      }
+
+    }
+
+    .scene {
+
+      width: 400px;
+      height: 400px;
+      perspective: 1200px;
+
+      background-color: rgba(230, 49, 31, 0.7);
+
+
+    }
+
+    .logo {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .img_desc {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 5%;
+
+      img {
+        margin: 0 auto;
+
+      }
+
+    }
+
+    .cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+
+      background-color: rgba(231, 101, 11, 0.7)
+
+    }
+
+    .cube__face {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+
+      background-color: rgba(141, 60, 143, 0.9)
+    }
+
+    .cube__face--front {
+      transform: rotateY(0deg);
+    }
+
+    .cube__face--right {
+      transform: rotateY(90deg);
+    }
+
+    .cube__face--back {
+      transform: rotateY(180deg);
+    }
+
+    .cube__face--left {
+      transform: rotateY(-90deg);
+    }
+
+    .cube__face--top {
+      transform: rotateX(90deg);
+    }
+
+    .cube__face--bottom {
+      transform: rotateX(-90deg);
+    }
+
+
+    .cube__face--front {
+      transform: rotateY(0deg) translateZ(200px);
+    }
+
+    .cube__face--right {
+      transform: rotateY(90deg) translateZ(200px);
+    }
+
+    .cube__face--back {
+      transform: rotateY(180deg) translateZ(200px);
+    }
+
+    .cube__face--left {
+      transform: rotateY(-90deg) translateZ(200px);
+    }
+
+    .cube__face--top {
+      transform: rotateX(90deg) translateZ(200px);
+    }
+
+    .cube__face--bottom {
+      transform: rotateX(-90deg) translateZ(200px);
+    }
+
+
+    .cube {
+      transform: translateZ(-200px);
+    }
+
+
+    .cube {
+      transition: transform 1s;
+    }
   }
 
 }
 
-.cube {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
+@media screen and (min-width: 320px) and (max-width: 600px) {
 
-  background-color: rgba(231,101,11,0.7)
+  section {
+    margin: 5% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
-}
+    #group_projets {
+      width: 40%;
+    }
 
-.cube__face {
-  position: absolute;
-  width: 400px;
-  height: 400px;
+    #nav_project {
+      position: absolute;
+      margin: 60% 50%;
+    }
 
-  background-color: rgba(141,60,143,0.9)
-}
-.cube__face--front  { transform: rotateY(  0deg); }
-.cube__face--right  { transform: rotateY( 90deg); }
-.cube__face--back   { transform: rotateY(180deg); }
-.cube__face--left   { transform: rotateY(-90deg); }
-.cube__face--top    { transform: rotateX( 90deg); }
-.cube__face--bottom { transform: rotateX(-90deg); }
+    .groupP {
+
+      position: absolute;
+      margin-right: 30%;
+      margin-top: 2rem;
+
+    }
+
+    #pokemon {
+
+    }
+
+    #waisatusMovie {
+
+    }
+
+    #todolist_react {
+
+    }
+
+    .groupP {
+      width: 40%;
+      position: absolute;
+      margin-right: 30%;
 
 
-.cube__face--front  { transform: rotateY(  0deg) translateZ(200px); }
-.cube__face--right  { transform: rotateY( 90deg) translateZ(200px); }
-.cube__face--back   { transform: rotateY(180deg) translateZ(200px); }
-.cube__face--left   { transform: rotateY(-90deg) translateZ(200px); }
-.cube__face--top    { transform: rotateX( 90deg) translateZ(200px); }
-.cube__face--bottom { transform: rotateX(-90deg) translateZ(200px); }
+    }
+
+    #page_project {
 
 
-.cube { transform: translateZ(-200px); }
+      h1 {
+        font-size: 2rem;
+      }
+
+    }
+
+    .scene {
+
+      width: 200px;
+      height: 200px;
+      perspective: 600px;
+      margin-top: 10%;
+
+      background-color: rgba(230, 49, 31, 0.7);
 
 
+    }
 
-.cube { transition: transform 1s; }
+    .logo {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .img_desc {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 5%;
+
+      img {
+        margin: 0 auto;
+
+      }
+
+    }
+
+    .border{
+
+      border: solid 1px black;
+    }
+
+    ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li{
+        list-style: none;
+        text-align: center;
+       padding: 1rem;
+      }
+    }
+
+    .cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+
+      background-color: rgba(231, 101, 11, 0.7)
+
+    }
+
+    .cube__face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+
+      background-color: rgba(141, 60, 143, 0.9)
+    }
+
+    .cube__face--front {
+      transform: rotateY(0deg);
+    }
+
+    .cube__face--right {
+      transform: rotateY(90deg);
+    }
+
+    .cube__face--back {
+      transform: rotateY(180deg);
+    }
+
+    .cube__face--left {
+      transform: rotateY(-90deg);
+    }
+
+    .cube__face--top {
+      transform: rotateX(90deg);
+    }
+
+    .cube__face--bottom {
+      transform: rotateX(-90deg);
+    }
+
+
+    .cube__face--front {
+      transform: rotateY(0deg) translateZ(100px);
+    }
+
+    .cube__face--right {
+      transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .cube__face--back {
+      transform: rotateY(180deg) translateZ(100px);
+    }
+
+    .cube__face--left {
+      transform: rotateY(-90deg) translateZ(100px);
+    }
+
+    .cube__face--top {
+      transform: rotateX(90deg) translateZ(100px);
+    }
+
+    .cube__face--bottom {
+      transform: rotateX(-90deg) translateZ(100px);
+    }
+
+
+    .cube {
+      transform: translateZ(-100px);
+    }
+
+
+    .cube {
+      transition: transform 1s;
+    }
+  }
+
+
 }

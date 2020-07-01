@@ -1,71 +1,230 @@
-
-#logo{
-  width: 180px;
-  height: auto;
-  padding: 1%;
-  margin-left: 5%;
-}
-header{
-  padding: 3%;
-  #cosmoHeader{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
-    display: none;
+@media screen and (min-width: 1024px)  {
+  #logo {
+    width: 180px;
+    height: auto;
+    padding: 1%;
+    margin-left: 5%;
   }
+  header {
+    padding: 3%;
 
-  .header{
-    overflow: hidden;
+    #cosmoHeader {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+      display: none;
+    }
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    .header {
+      overflow: hidden;
 
-    img{
-      width: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      img {
+        width: 40%;
+      }
+    }
+
+    h1 {
+      font-size: 4rem;
+      width: 80%;
+      font-family: 'Merriweather', serif;
+      text-transform: uppercase;
+      line-height: 7rem;
+    }
+
+    h2 {
+      z-index: 1;
+      color: black;
+      width: 80%;
+      line-height: 3rem;
+
+      font-family: 'Pangolin', cursive;
+      font-size: 2.6em;
+    }
+
+    .button_about_section {
+      width: 3rem;
+      height: 6rem;
+      border: solid 5px black;
+      border-radius: 180px;
+      margin: 0 auto;
+
+    }
+
+    .button_about_section:hover {
+      cursor: pointer;
+
+    }
+
+    .click {
+      width: 30%;
+      height: 30%;
+      background-color: black;
+      border-radius: 180px;
+      margin: 50% auto;
+      animation-duration: 10s;
+      animation-name: slidein;
+
+    }
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+
+  #logo {
+    width: 180px;
+    height: auto;
+    padding: 1%;
+    margin-left: 5%;
+  }
+  header {
+    padding: 3%;
+
+    #cosmoHeader {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+      display: none;
+    }
+
+    .header {
+      overflow: hidden;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      img {
+        width: 40%;
+      }
+    }
+
+    h1 {
+      font-size: 4rem;
+      width: 80%;
+      font-family: 'Merriweather', serif;
+      text-transform: uppercase;
+      line-height: 7rem;
+    }
+
+    h2 {
+      z-index: 1;
+      color: black;
+      width: 80%;
+      line-height: 3rem;
+
+      font-family: 'Pangolin', cursive;
+      font-size: 2.6em;
+    }
+
+    .button_about_section {
+      width: 3rem;
+      height: 6rem;
+      border: solid 5px black;
+      border-radius: 180px;
+      margin: 0 auto;
+
+    }
+
+    .button_about_section:hover {
+      cursor: pointer;
+
+    }
+
+    .click {
+      width: 30%;
+      height: 30%;
+      background-color: black;
+      border-radius: 180px;
+      margin: 50% auto;
+      animation-duration: 10s;
+      animation-name: slidein;
+
     }
   }
 
-  h1{
-    font-size: 4rem;
-    width:80%;
-    font-family: 'Merriweather', serif;
-    text-transform: uppercase;
-    line-height: 7rem;
-  }
+}
 
-  h2{
-    z-index: 1;
-    color: black;
+
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+
+  #logo {
+    width: 20%;
+    height: auto;
+    padding: 1%;
+    margin-left: 5%;
+  }
+  header {
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding: 10% 0;
+
+
+
+  img{
     width: 80%;
-    line-height: 3rem;
-
-    font-family: 'Pangolin', cursive;
-    font-size: 2.6em ;
-  }
-
-  .button_about_section{
-    width: 3rem;
-    height:6rem;
-    border: solid 5px black;
-    border-radius: 180px;
     margin: 0 auto;
 
   }
-  .button_about_section:hover{
-    cursor: pointer;
 
-  }
-  .click{
-    width: 30%;
-    height: 30%;
-    background-color: black;
-    border-radius: 180px;
-    margin: 50% auto;
-    animation-duration: 10s;
-    animation-name: slidein;
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      width: 100%;
+      font-family: 'Merriweather', serif;
+      text-transform: uppercase;
+      line-height: 3rem;
+    }
 
+    h2 {
+      z-index: 1;
+      color: black;
+      width: 100%;
+      line-height: 3rem;
+
+      font-family: 'Pangolin', cursive;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .button_about_section {
+      width: 8%;
+      height: 4rem;
+      border: solid 5px black;
+      border-radius: 180px;
+      margin: 0 auto;
+
+    }
+
+    .button_about_section:hover {
+      cursor: pointer;
+
+    }
+
+    .click {
+      width: 30%;
+      height: 30%;
+      background-color: black;
+      border-radius: 180px;
+      margin: 50% auto;
+      animation-duration: 10s;
+      animation-name: slidein;
+
+    }
   }
+
+
 }

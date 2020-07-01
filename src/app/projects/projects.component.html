@@ -3,77 +3,40 @@
   <div id="group_projets" >
 
 
-  <div id="waisatusMovie" class="groupP">
-    <h3>Movie Database</h3>
+    <div   *ngFor="let project of projects">
 
-    <p>Uilisation de l'Api Movie Database, pour créer une application de type allociné</p>
+  <div *ngIf="idState===project.identification" [id]="project.identification" class="groupP">
 
-    <h4>Notion clef abbordé</h4>
-    <ul>
+    <h2>{{project.title}}</h2>
 
-      <li>HTTP GET & POST</li>
-      <li>State & Props</li>
-      <li>Arrow function</li>
-    </ul>
-    <h5>Outils utilisée</h5>
+    <p>{{project.intro}}</p>
 
-    <ul>
+    <div *ngIf="project.identification != 'page_project'">
+    <h3>Notions abordé</h3>
 
-      <li>POSTMAN</li>
-      <li>Photoshop</li>
-      <li>WEB Storm IDE</li>
-    </ul>
+    <p>{{project.notions}}</p>
 
-  </div>
+    <h3>Outils utilisé</h3>
+    <p>{{project.tools}}</p>
+    </div>
 
-  <div id="todolist_react" class="groupP">
-    <h3>ToDo_List codé en React</h3>
-    <p>Utilisation de la librairie React Js, ajout, mise à jour, supprésion et sauvegarde des Tasks.
-      Cette exercice permet de comprendre les oppérations de CRUD essentielles pour l'interraction
-
-    </p>
-    <h4>Notion clef abbordé</h4>
-    <ul>
-
-      <li>CRUD opération</li>
-      <li>State & Props</li>
-      <li>Arrow function</li>
-    </ul>
-  </div>
-
-  <div id="pokemon" class="groupP">
-    <h3>PokeApi, ANGULAR</h3>
-
-    <p>Utilisation de la librairie Angular, Affichage des 150 premiers pokemons, fiche détaillé
-
-    </p>
-    <h4>Notion clef abbordé</h4>
-    <ul>
-
-      <li>Requette HTTP Get</li>
-      <li>Parcourir des objets ou des array</li>
-      <li>Affiche de SPrite</li>
-    </ul>
-
-  </div>
-
-<div id="page_project">
-
-  <h1>Projets Développement Web</h1>
-
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac quam sit amet sapien aliquet ultricies. Phasellus cursus lorem risus, eu fermentum ipsum fermentum ut. Donec tincidunt tristique tempus. Ut leo orci, placerat ut placerat quis, laoreet id massa. Maecenas vel massa eu mi pharetra condimentum. Sed pellentesque massa quis maximus gravida. Sed placerat tortor quis nulla imperdiet euismod. Vivamus vel metus a urna ullamcorper iaculis et ut erat. Etiam accumsan commodo justo, vel euismod tortor iaculis in.
-
-    Mauris placerat, neque molestie aliquet venenatis, ex velit faucibus quam, eu pulvinar sem lacus nec urna. Nulla facilisi. Aenean vel turpis ante. Morbi tristique a velit vel vulputate. Nulla massa lectus, facilisis malesuada fringilla id, accumsan ut justo. Integer auctor imperdiet risus, quis consequat tellus pretium eu. Nam rutrum magna mi, non viverra augue facilisis id. Aenean non lectus non lacus laoreet aliquet in nec mi. Donec rhoncus urna blandit est sodales, in aliquet tortor egestas. Nunc nec lectus et erat finibus tempus. Aliquam erat volutpat. Curabitur tristique dignissim velit, ac volutpat purus auctor a. </p>
 
 </div>
-
+    </div>
     <div id="nav_project">
-    <button type="button" (click)="frontOnTop()">Top</button>
-    <button type="button" (click)="frontOnBottom()">bottom</button>
-    <button type="button" (click)="frontOnLeft()">Pokemon</button>
-    <button type="button" (click)="frontOnRight()">To_DoList React</button>
-    <button type="button" (click)="frontOnBack()">Movie_Database</button>
-    <button type="button" (click)="rightOnFront()">Acceuil</button>
+
+      <h3>Navigation</h3>
+      <ul>
+        <li (click)="frontOnTop()" id="top" class="border">Top</li>
+        <li (click)="frontOnBottom()" id="bottom"class="border">Bottom</li>
+        <li (click)="frontOnLeft()" id="left" class="border">Pokemon</li>
+        <li (click)="frontOnRight()" id="right" class="border"> To_DoList React</li>
+        <li (click)="frontOnBack()" id="back" class="border">Movie_Database</li>
+        <li (click)="rightOnFront()" id="front" class="border">Acceuil</li>
+
+
+      </ul>
+
     </div>
   </div>
 

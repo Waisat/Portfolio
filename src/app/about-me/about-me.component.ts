@@ -11,6 +11,8 @@ import {main} from "@angular/compiler-cli/src/main";
 })
 export class AboutMeComponent implements AfterViewInit , OnInit{
 scrolldown:boolean= false;
+
+
 @Input() checkScroll: boolean= false
 
   public logoImg: any=[
@@ -78,6 +80,8 @@ scrolldown:boolean= false;
   }
 
 
+
+
       onScrollAnimate(){
 
 
@@ -94,12 +98,13 @@ scrolldown:boolean= false;
         scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar*/
       }
       })
-     tl  /*.to('.about-rec',{scrollTrigger:'#about_me', width:0,borderRadius:10, boxShadow:'5px 10px', duration:1})*/
-    .from('#text',{opacity:0, duration:2}, '-=1.5')
 
-   .from('.rectangle',{ x:600, opacity:0, duration:1, stagger:1}, '-=2.2')
-    .from('.logo',{opacity:0, duration:0.8, stagger:0.3 }, '-=2')
-  gsap.to('.logo', {y:50, duration:3, ease:'bounce', repeat: -1})
+          tl  /*.to('.about-rec',{scrollTrigger:'#about_me', width:0,borderRadius:10, boxShadow:'5px 10px', duration:1})*/
+            .from('#text', {opacity: 0, duration: 2}, '-=1.5')
+
+            .from('.rectangle', {x: 600, opacity: 0, duration: 1, stagger: 1}, '-=2.2')
+            .from('.logo', {opacity: 0, duration: 0.8, stagger: 0.3}, '-=2')
+          gsap.to('.logo', {y: 50, duration: 3, ease: 'bounce', repeat: -1})
 
 
 
